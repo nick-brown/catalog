@@ -2,6 +2,12 @@
 
 class BaseController extends Controller {
 
+    public function __construct()
+    {
+        Blade::setContentTags('<%', '%>');
+        Blade::setEscapeContentTags('<%%', '%>');
+    }
+
 	/**
 	 * Setup the layout used by the controller.
 	 *
