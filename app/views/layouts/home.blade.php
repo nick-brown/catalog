@@ -10,6 +10,7 @@
     @section('scripts')
         <% HTML::script('assets/bower/angular/angular.min.js') %>
         <% HTML::script('assets/bower/angular-resource/angular-resource.min.js') %>
+        <% HTML::script('js/app.js') %>
     @show
 </body>
 </html>
