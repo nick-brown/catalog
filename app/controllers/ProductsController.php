@@ -10,7 +10,9 @@ class ProductsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+	    $products = Product::all();
+
+        return Response::json($products->toArray());
 	}
 
 	/**
@@ -43,11 +45,7 @@ class ProductsController extends \BaseController {
 	{
         $product = Product::findOrFail($id);
 
-        return Response::json(array(
-            'error' => false,
-            'products' => $product->toArray(),
-            200
-        ));
+        return Response::json($product->toArray());
 	}
 
 	/**
