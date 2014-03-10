@@ -2,6 +2,7 @@
 
 class ProductsController extends \BaseController {
 
+    public function __construct() {}
 	/**
 	 * Display a listing of the resource.
 	 *

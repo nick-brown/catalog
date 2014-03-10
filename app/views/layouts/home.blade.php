@@ -2,11 +2,14 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>Product Catalog</title>
-
-    @section('head
+    @yield('head')
 </head>
 <body>
+    @yield('body')
 
+    @section('scripts')
+        <% HTML::script('assets/bower/angular/angular.min.js') %>
+        <% HTML::script('assets/bower/angular-resource/angular-resource.min.js') %>
+    @show
 </body>
 </html>

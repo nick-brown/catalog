@@ -5,7 +5,7 @@ class BaseController extends Controller {
     public function __construct()
     {
         Blade::setContentTags('<%', '%>');
-        Blade::setEscapeContentTags('<%%', '%>');
+        Blade::setEscapedContentTags('<%%', '%>');
     }
 
 	/**

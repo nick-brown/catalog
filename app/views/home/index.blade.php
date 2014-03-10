@@ -1,1 +1,6 @@
-/var/www/catalog/app/views/home.blade.php
+@extends('layouts.home')
+
+@section('body')
+
+@stop
+
