@@ -25,19 +25,11 @@ class ProductsController extends \BaseController {
 	/**
 	 * Store a newly created resource in storage.
 	 *
-     * @param $id
-     *
 	 * @return Response
 	 */
-	public function store($id)
+	public function store()
 	{
-        $product = Product::findOrFail($id);
-
-        return Response::json(array(
-            'error' => false,
-            'products' => $product->toArray(),
-            200
-        ));
+        //
 	}
 
 	/**
@@ -48,7 +40,13 @@ class ProductsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+        $product = Product::findOrFail($id);
+
+        return Response::json(array(
+            'error' => false,
+            'products' => $product->toArray(),
+            200
+        ));
 	}
 
 	/**
