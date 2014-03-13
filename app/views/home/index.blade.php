@@ -11,21 +11,21 @@
 
             <div style="float:left;">
                 <form>
-                    <input type="text" ng-model="editing.name">
+                    <input type="text" ng-model="editing.name"> Name
                     <br>
-                    <input type="text" ng-model="editing.width">
+                    <input type="text" ng-model="editing.width"> Width
                     <br>
-                    <input type="text" ng-model="editing.length">
+                    <input type="text" ng-model="editing.length"> Length
                     <br>
-                    <input type="text" ng-model="editing.height">
+                    <input type="text" ng-model="editing.height"> Height
                     <br>
-                    <input type="text" ng-model="editing.weight">
+                    <input type="text" ng-model="editing.weight"> Weight
                     <br>
-                    <input type="text" ng-model="editing.weight">
+                    <input type="text" ng-model="editing.usd_value"> Value (USD)
+                    <br><br>
+                    Description
                     <br>
-                    <input type="text" ng-model="editing.usd_value">
-                    <br>
-                    <textarea ng-model="editing.description"></textarea>
+                    <textarea style="width:240px; height:90px;" ng-model="editing.description"></textarea>
                     <br>
                     <input type="submit" value="{{ editing.name ? 'Update' : 'Add' }}" ng-click="addUpdateProduct()">
                 </form>
