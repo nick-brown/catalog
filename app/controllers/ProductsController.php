@@ -22,7 +22,7 @@ class ProductsController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+        //
 	}
 
 	/**
@@ -32,7 +32,9 @@ class ProductsController extends \BaseController {
 	 */
 	public function store()
 	{
-        //
+        $product = Product::create('');
+
+        return Response::json($product);
 	}
 
 	/**
