@@ -4,10 +4,10 @@
 
 This utility was built using:
 
-PHP 5.4.9
-Laravel 4.1
-Angular 1.2.14
-MySQL 5.5.32
+* PHP 5.4.9
+* Laravel 4.1.23
+* Angular 1.2.14
+* MySQL 5.5.32
 
 Along with Composer, Bower, and Grunt
 
