@@ -37,7 +37,7 @@ angular.module('productEditor', ['ngResource'])
                     var index = $scope.products.indexOf($scope.currentProduct);
 
                     $scope.products.splice(index, 1);
-                    $scope.editing = {};
+                    $scope.editing = {}, $scope.currentProduct = null;
                 }), function(response) {
                     errors.throw(response);
                 };
