@@ -32,7 +32,7 @@ class ProductsController extends \BaseController {
 	 */
 	public function store()
 	{
-        $product = Product::create('');
+        $product = Product::create(Input::all());
 
         return Response::json($product);
 	}
