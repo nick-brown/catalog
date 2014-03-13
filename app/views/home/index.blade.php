@@ -28,6 +28,8 @@
                     <textarea style="width:240px; height:90px;" ng-model="editing.description"></textarea>
                     <br>
                     <input type="submit" value="{{ editing.name ? 'Update' : 'Add' }}" ng-click="addUpdateProduct()">
+                    <input type="button" value="Delete" ng-show="currentProduct" ng-click="deleteProduct()">
+
                 </form>
             </div>
         </div>
